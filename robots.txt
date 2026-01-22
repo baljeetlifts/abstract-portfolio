@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://baljeetlifts.github.io/abstract-portfolio/sitemap.xml
