@@ -18,43 +18,44 @@
 <div class="blob blob2"></div>
 
 
-  <nav class="navbar">
-  <div class="logo">Baljeet</div>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#profile">Profile</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-
   <!-- ===== BACKGROUND ===== -->
   <div class="bg"></div>
 
   <!-- ===== NAVBAR ===== -->
   <header class="navbar">
-    <div class="logo">Logo</div>
-    <nav>
-      <a href="#home" class="nav-link active">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#services" class="nav-link">Service</a>
-      <a href="#portfolio" class="nav-link">Portfolio</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-  </header>
+  <div class="logo">Baljeet</div>
+
+  <nav>
+  <a href="#home" class="nav-link active">Home</a>
+  <a href="#about" class="nav-link">About</a>
+  <a href="#services" class="nav-link">Service</a>
+  <a href="#projects" class="nav-link">Projects</a>
+  <a href="#portfolio" class="nav-link">Portfolio</a>
+  <a href="#contact" class="nav-link">Contact</a>
+</nav>
+
+
+  <!-- 🌙 THEME TOGGLE BUTTON (ADD HERE) -->
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+</header>
+
 
   <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero-card">
-      <h1>BALJEET<br>webwork companies</h1>
+  <section class="hero" id="home" data-color="cyan">
+
+    <div class="hero-card glass">
+      <h1>
+  <span class="static-text">BALJEET</span><br>
+  <span id="typing-text"></span>
+</h1>
+
       <p>
         Clean, modern and premium abstract UI design built using pure HTML, CSS and JavaScript.
       </p>
       <button id="getStarted">Get Started</button>
     </div>
   </section>
-<section id="profile" class="profile hidden">
+<section id="profile" class="profile hidden" data-color="purple">
   <div class="profile-card">
     <div class="profile-left">
   <div class="profile-pic">
@@ -87,22 +88,62 @@
       </div>
 
       <div class="social-links">
-  <a href="#" class="social-btn github"> 
-    <i class="fa-brands fa-github"></i> GitHub
+  <a href="https://github.com/baljeetlifts" target="_blank" class="github">
+    <i class="fa-brands fa-github"></i>
+    GitHub
   </a>
 
-  <a href="#" class="social-btn linkedin">
-    <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+
+
+
+
+
+
+  <a href="https://linkedin.com/in/baljeetlifts" target="_blank" class="linkedin">
+    <i class="fa-brands fa-linkedin-in"></i>
+    LinkedIn
   </a>
 
-  <a href="#" class="social-btn instagram">
-    <i class="fa-brands fa-instagram"></i> Instagtam
+  <a href="https://instagram.com/baljeetlifts" target="_blank" class="instagram">
+    <i class="fa-brands fa-instagram"></i>
+    Instagram
   </a>
 </div>
+
+
+
+
+
+
+
+
+
 
     </div>
   </div>
 </section>
+
+<section id="projects" class="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Abstract Portfolio</h3>
+      <p>Modern portfolio with glassmorphism UI.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Login System</h3>
+      <p>Auth system with dark mode support.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Gradient Generator</h3>
+      <p>Live CSS gradient builder tool.</p>
+    </div>
+  </div>
+</section>
+
 
 <section id="projects" class="projects">
   <h2 class="section-title">Projects</h2>
@@ -181,7 +222,10 @@
 
   <!-- JS -->
   <script src="script.js"></script>
+  <div class="cursor-aura"></div>
+
 </body>
 </html>
+
 
 
