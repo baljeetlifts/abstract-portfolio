@@ -805,3 +805,23 @@ section {
   opacity: 1;
   margin-left: 6px;
 }
+
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
