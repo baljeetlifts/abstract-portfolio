@@ -224,3 +224,17 @@ document.querySelectorAll('.social-links a').forEach(btn => {
     btn.style.transform = 'translate(0,0)'
   })
 })
+
+const pricingSubtitle = document.querySelector('.pricing-subtitle');
+
+const subtitleObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      pricingSubtitle.classList.add('show');
+    }
+  });
+}, { threshold: 0.6 });
+
+if (pricingSubtitle) {
+  subtitleObserver.observe(pricingSubtitle);
+}

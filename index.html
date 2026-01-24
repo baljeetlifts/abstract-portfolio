@@ -3,7 +3,15 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="7aGnA2mEaYE_4f9tTeHG_aO9b6P4BRmf005z9C6QlUg" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="style.css">
+</noscript>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
 
   <meta charset="UTF-8" />
@@ -25,7 +33,7 @@
 
   <!-- ===== NAVBAR ===== -->
   <header class="navbar">
-  <div class="logo">Baljeet</div>
+  <div class="logo">BALJEET WEBWORK COMPANIES</div>
 
   <nav>
   <a href="#home" class="nav-link active">Home</a>
@@ -51,11 +59,12 @@
   <span id="typing-text"></span>
 </h1>
 
-      <p>
-        
- Hi I’m Baljeet 👋I design clean, modern, and premium landing pages and portfolio websites. abstract UI designs built using pure HTML, CSS and JavaScript.
-        
-      </p>
+<p class="hero-desc">
+  <span class="intro">HI I’M BALJEET 👋</span><br>
+  I design clean, modern, and premium landing pages and portfolio websites. Abstract UI designs built using pure HTML, CSS and JavaScript.
+</p>
+
+
       <button id="getStarted">Get Started</button>
     </div>
   </section>
@@ -209,6 +218,56 @@ Let’s build something clean and professional 🚀
     </div>
   </section>
 
+<!-- ===== PRICING ===== -->
+<section class="section" id="pricing">
+  <h2>Pricing</h2>
+  <p class="section-subtitle">Simple, transparent pricing. No hidden costs. Trusted by creators & small businesses. Fast response guaranteed.✔ 100% satisfaction • ✔ No upfront confusion • ✔ Direct WhatsApp support
+</p>
+  <div class="pricing-cards">
+
+    <div class="pricing-card">
+      <h3>Starter</h3>
+      <p class="price">₹1,499</p>
+      <ul
+        <li>✔ One Landing Page</li>
+        <li>✔ Responsive Design</li>
+        <li>✔ Basic Animations</li>
+        <li>✔ 3 Days Delivery</li>
+      </ul>
+      <a href="#contact" class="pricing-btn">
+        Get Started</a>
+    </div>
+
+    <div class="pricing-card professional featured">
+      <h3>Professional</h3>
+      <p class="price">₹3,999</p>
+      <ul>
+        <li>✔ Multi-Section Website</li>
+        <li>✔ Premium UI Design</li>
+        <li>✔ Smooth Animations</li>
+        <li>✔ SEO Ready</li>
+        <li>✔ 5 Days Delivery</li>
+      </ul>
+      <a href="#contact" class="pricing-btn">
+        Most Popular</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Custom</h3>
+      <p class="price">Let’s Talk</p>
+      <ul>
+        <li>✔ Custom Design</li>
+        <li>✔ Advanced Features</li>
+        <li>✔ 100% satisfaction</li>
+        <li>✔ Full Support</li>
+        </ul>
+      <a href="#contact" class="pricing-btn">
+        Contact Me</a>
+    </div>
+
+  </div>
+</section>
+
   <!-- ===== PORTFOLIO ===== -->
   <section class="section" id="portfolio">
     <h2>Portfolio</h2>
@@ -219,7 +278,31 @@ Let’s build something clean and professional 🚀
   <section class="section" id="contact">
     <h2>Contact</h2>
     <p>Email us at <strong>baljeetade@gmail.com</strong></p>
-    <p>Phone us at <strong>8010589721</strong></p>
+<p>
+<a
+  href="https://wa.me/918010589721?text=Hi%20Baljeet,%20I%20want%20to%20discuss%20a%20website%20project"
+  target="_blank"
+  class="whatsapp-link"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path
+      d="M12 2a10 10 0 0 0-8.54 15.2L2 22l4.92-1.29A10 10 0 1 0 12 2Zm0 18.2a8.17 8.17 0 0 1-4.18-1.16l-.3-.18-2.92.77.78-2.85-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.63-6.15c-.25-.12-1.47-.73-1.7-.81-.23-.09-.4-.12-.56.12-.16.25-.64.81-.78.98-.14.16-.28.18-.53.06a6.63 6.63 0 0 1-1.95-1.2 7.32 7.32 0 0 1-1.36-1.7c-.14-.25 0-.39.11-.52.12-.12.25-.28.37-.42.12-.14.16-.25.25-.41.09-.16.04-.3-.02-.42-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.42.06-.64.3-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.65.57.25 1.01.4 1.35.51.57.18 1.09.15 1.5.09.46-.07 1.47-.6 1.67-1.18.2-.57.2-1.06.14-1.18-.06-.11-.22-.18-.47-.3Z"
+    />
+  </svg>
+
+  Chat on WhatsApp
+</a>
+
+
+</p>
+
+
   </section>
 
   <!-- ===== FOOTER ===== -->
