@@ -1,321 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="7aGnA2mEaYE_4f9tTeHG_aO9b6P4BRmf005z9C6QlUg" />
-<link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="style.css">
-</noscript>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><title>Baljeet | Frontend Developer Portfolio</title>
-</title>
+  <title>Baljeet — Cinematic Portfolio</title>
 
-  <!-- CSS -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="blob blob1"></div>
-<div class="blob blob2"></div>
+  <!-- CINEMATIC INTRO -->
+  <div class="intro">
+    <div class="intro-text">
+      <span>CREATING</span>
+      <span>EXPERIENCES</span>
+    </div>
+  </div>
 
-
-  <!-- ===== BACKGROUND ===== -->
-  <div class="bg"></div>
-
-  <!-- ===== NAVBAR ===== -->
+  <!-- FIXED NAVBAR -->
   <header class="navbar">
-  <div class="logo">BALJEET WEBWORK COMPANIES</div>
+    <div class="logo">BALJEET</div>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <nav>
-  <a href="#home" class="nav-link active">Home</a>
-  <a href="#about" class="nav-link">About</a>
-  <a href="#services" class="nav-link">Service</a>
-  <a href="#projects" class="nav-link">Projects</a>
-  <a href="#portfolio" class="nav-link">Portfolio</a>
-  <a href="#contact" class="nav-link">Contact</a>
-</nav>
+  <!-- MAIN CONTENT -->
+  <main>
 
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
 
-  <!-- 🌙 THEME TOGGLE BUTTON (ADD HERE) -->
-  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
-</header>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span>Baljeet</span>
+        </h1>
 
+        <p class="hero-subtitle">
+          I design clean, modern & cinematic websites<br/>
+          using pure HTML, CSS & JavaScript.
+        </p>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home" data-color="cyan">
-
-    <div class="hero-card glass">
-      <h1>
-  <span class="static-text">BALJEET</span><br>
-  <span id="typing-text"></span>
-</h1>
-
-<p class="hero-desc">
-  <span class="intro">HI I’M BALJEET 👋</span><br>
-  I design clean, modern, and premium landing pages and portfolio websites. Abstract UI designs built using pure HTML, CSS and JavaScript.
-</p>
-
-
-      <button id="getStarted">Get Started</button>
-    </div>
-  </section>
-<section id="profile" class="profile hidden" data-color="purple">
-  <div class="profile-card">
-    <div class="profile-left">
-  <div class="profile-pic">
-    <img src="me.jpg" alt="Baljeet Singh">
-  </div>
-</div>
-
-
-    <div class="profile-right">
-      <h1>Baljeet Singh</h1>
-      <h3>Frontend Developer & UI Designer</h3>
-      <p>
-        I craft modern, aesthetic and high-performance web experiences using
-        pure HTML, CSS & JavaScript.
- I focus on:– Minimal, Apple-style UI – Fast loading pages – Mobile-friendly design
-Perfect for creators, freelancers, and small businesses who want a strong online presence.
-Let’s build something clean and professional 🚀
-      </p>
-
-      <div class="skills">
-        <div class="skill">
-          <span>HTML</span>
-          <div class="bar"><div style="width:95%"></div></div>
-        </div>
-        <div class="skill">
-          <span>CSS</span>
-          <div class="bar"><div style="width:90%"></div></div>
-        </div>
-        <div class="skill">
-          <span>JavaScript</span>
-          <div class="bar"><div style="width:85%"></div></div>
+        <div class="hero-cta">
+          <a href="#contact" class="btn primary">Get Started</a>
+          <a href="#projects" class="btn ghost">View Work</a>
         </div>
       </div>
+    </section>
 
-      <div class="social-links">
-  <a href="https://github.com/baljeetlifts" target="_blank" class="github">
-    <i class="fa-brands fa-github"></i>
-    GitHub
-  </a>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2 class="section-title">Selected Projects</h2>
 
+      <div class="cards">
+        <div class="card">Landing Page</div>
+        <div class="card">Portfolio Site</div>
+        <div class="card">Business Website</div>
+      </div>
+    </section>
 
+    <!-- SERVICES -->
+    <section class="section dark" id="services">
+      <h2 class="section-title">Services</h2>
 
+      <div class="cards">
+        <div class="card">UI / UX Design</div>
+        <div class="card">Frontend Development</div>
+        <div class="card">Performance Optimization</div>
+      </div>
+    </section>
+<!-- PROCESS -->
+<section class="section cinematic reveal">
+  <h2 class="section-title">How I Work</h2>
 
-
-
-
-  <a href="https://linkedin.com/in/baljeetlifts" target="_blank" class="linkedin">
-    <i class="fa-brands fa-linkedin-in"></i>
-    LinkedIn
-  </a>
-
-  <a href="https://instagram.com/baljeetlifts" target="_blank" class="instagram">
-    <i class="fa-brands fa-instagram"></i>
-    Instagram
-  </a>
-</div>
-
-
-
-
-
-
-
-
-
-
-    </div>
+  <div class="timeline">
+    <div class="timeline-item">01 — Idea & Research</div>
+    <div class="timeline-item">02 — Design System</div>
+    <div class="timeline-item">03 — Development</div>
+    <div class="timeline-item">04 — Launch & Optimize</div>
   </div>
 </section>
 
-<section id="projects" class="projects">
-  <h2 class="section-title">Projects</h2>
+<!-- EXPERIENCE -->
+<section class="section dark cinematic reveal">
+  <h2 class="section-title">Experience</h2>
 
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Abstract Portfolio</h3>
-      <p>Modern portfolio with glassmorphism UI.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Login System</h3>
-      <p>Auth system with dark mode support.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Gradient Generator</h3>
-      <p>Live CSS gradient builder tool.</p>
-    </div>
+  <div class="cards">
+    <div class="card">Frontend Developer</div>
+    <div class="card">Landing Page Specialist</div>
+    <div class="card">Performance Optimizer</div>
   </div>
 </section>
 
 
-<section id="projects" class="projects">
-  <h2 class="section-title">Projects</h2>
 
-  <div class="project-grid">
+<section class="section cinematic reveal philosophy">
+  <h2 class="section-title">Design Philosophy</h2>
 
-    <a href="https://github.com/yourusername/abstract-portfolio" target="_blank" class="project-card">
-      <h3>Abstract Portfolio</h3>
-      <p>Modern animated portfolio built with HTML, CSS & JavaScript.</p>
-      <span>HTML · CSS · JS</span>
-    </a>
+  <p class="philosophy-text">
+    I don’t build websites.<br />
+    I craft digital experiences that feel intentional,
+    immersive, and premium.
+  </p>
+</section>
 
-    <a href="https://github.com/yourusername/login-ui" target="_blank" class="project-card">
-      <h3>Login System UI</h3>
-      <p>Stylish login & signup UI with show-password logic.</p>
-      <span>UI · UX · JavaScript</span>
-    </a>
+<section class="section dark cinematic reveal">
+  <h2 class="section-title">Core Skills</h2>
 
-    <a href="https://github.com/yourusername/gradient-generator" target="_blank" class="project-card">
-      <h3>Gradient Generator</h3>
-      <p>Interactive gradient generator with copy feature.</p>
-      <span>CSS · JS</span>
-    </a>
-
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>UI Design</span>
+    <span>Performance</span>
+    <span>Animations</span>
   </div>
 </section>
 
+<section class="section cinematic reveal">
+  <h2 class="section-title">The Lab</h2>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="section" id="about">
-    <h2>About Us</h2>
-    <p>
-      We create beautiful, smooth and modern UI experiences with clean structure and high-quality design.
-    </p>
-  </section>
+  <div class="lab-grid">
+    <div class="lab-card">Micro Interactions</div>
+    <div class="lab-card">Cinematic Motion</div>
+    <div class="lab-card">Scroll Storytelling</div>
+  </div>
+</section>
 
-  <!-- ===== SERVICES ===== -->
-  <section class="section" id="services">
-    <h2>What We Offer</h2>
+<section class="section dark cinematic reveal">
+  <h2 class="section-title">My Journey</h2>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Modern Design</h3>
-        <p>Clean, abstract and visually appealing UI designs.</p>
-      </div>
+  <div class="journey">
+    <div>2023 — Started with curiosity</div>
+    <div>2024 — Built real projects</div>
+    <div>2025 — Focused on premium experiences</div>
+  </div>
+</section>
 
-      <div class="card">
-        <h3>Responsive</h3>
-        <p>Looks perfect on desktop, tablet and mobile.</p>
-      </div>
+<section class="section cinematic reveal final-cta">
+  <h2 class="section-title">Ready to Build Something Iconic?</h2>
 
-      <div class="card">
-        <h3>Performance</h3>
-        <p>Optimized code with smooth animations.</p>
-      </div>
-    </div>
-  </section>
+  <a href="#contact" class="btn primary large">
+    Start a Project
+  </a>
+</section>
 
-<!-- ===== PRICING ===== -->
-<section class="section" id="pricing">
-  <h2>Pricing</h2>
-  <p class="section-subtitle">Simple, transparent pricing. No hidden costs. Trusted by creators & small businesses. Fast response guaranteed.✔ 100% satisfaction • ✔ No upfront confusion • ✔ Direct WhatsApp support
-</p>
-  <div class="pricing-cards">
+<section class="section dark cinematic reveal pricing">
+  <h2 class="section-title">Investment</h2>
+  <p class="pricing-sub">
+    Not a cost.<br />
+    A commitment to quality.
+  </p>
 
-    <div class="pricing-card">
+  <div class="pricing-grid">
+    
+    <div class="price-card">
       <h3>Starter</h3>
-      <p class="price">₹1,499</p>
-      <ul
-        <li>✔ One Landing Page</li>
-        <li>✔ Responsive Design</li>
-        <li>✔ Basic Animations</li>
-        <li>✔ 3 Days Delivery</li>
+      <p class="price">₹9,999</p>
+      <ul>
+        <li>Single Page Website</li>
+        <li>Clean UI Design</li>
+        <li>Basic Animations</li>
       </ul>
-      <a href="#contact" class="pricing-btn">
-        Get Started</a>
+      <span class="price-glow"></span>
     </div>
 
-    <div class="pricing-card professional featured">
-      <h3>Professional</h3>
-      <p class="price">₹3,999</p>
+    <div class="price-card featured">
+      <h3>Premium</h3>
+      <p class="price">₹24,999</p>
       <ul>
-        <li>✔ Multi-Section Website</li>
-        <li>✔ Premium UI Design</li>
-        <li>✔ Smooth Animations</li>
-        <li>✔ SEO Ready</li>
-        <li>✔ 5 Days Delivery</li>
+        <li>Multi-Section Website</li>
+        <li>Cinematic Animations</li>
+        <li>Custom UI / UX</li>
+        <li>Performance Optimized</li>
       </ul>
-      <a href="#contact" class="pricing-btn">
-        Most Popular</a>
+      <span class="price-glow"></span>
     </div>
 
-    <div class="pricing-card">
-      <h3>Custom</h3>
-      <p class="price">Let’s Talk</p>
+    <div class="price-card">
+      <h3>Legendary</h3>
+      <p class="price">₹49,999+</p>
       <ul>
-        <li>✔ Custom Design</li>
-        <li>✔ Advanced Features</li>
-        <li>✔ 100% satisfaction</li>
-        <li>✔ Full Support</li>
-        </ul>
-      <a href="#contact" class="pricing-btn">
-        Contact Me</a>
+        <li>Ultra Cinematic Website</li>
+        <li>Scroll Storytelling</li>
+        <li>Luxury Visual Effects</li>
+        <li>Custom Experience</li>
+      </ul>
+      <span class="price-glow"></span>
     </div>
 
   </div>
 </section>
 
-  <!-- ===== PORTFOLIO ===== -->
-  <section class="section" id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Our work reflects simplicity, creativity and performance.</p>
-  </section>
+<section class="section cinematic-process reveal">
+  <h2 class="section-title">How I Build Cinematic Experiences</h2>
 
-  <!-- ===== CONTACT ===== -->
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Email us at <strong>baljeetade@gmail.com</strong></p>
-<p>
-<a
-  href="https://wa.me/918010589721?text=Hi%20Baljeet,%20I%20want%20to%20discuss%20a%20website%20project"
-  target="_blank"
-  class="whatsapp-link"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path
-      d="M12 2a10 10 0 0 0-8.54 15.2L2 22l4.92-1.29A10 10 0 1 0 12 2Zm0 18.2a8.17 8.17 0 0 1-4.18-1.16l-.3-.18-2.92.77.78-2.85-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.63-6.15c-.25-.12-1.47-.73-1.7-.81-.23-.09-.4-.12-.56.12-.16.25-.64.81-.78.98-.14.16-.28.18-.53.06a6.63 6.63 0 0 1-1.95-1.2 7.32 7.32 0 0 1-1.36-1.7c-.14-.25 0-.39.11-.52.12-.12.25-.28.37-.42.12-.14.16-.25.25-.41.09-.16.04-.3-.02-.42-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.42.06-.64.3-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.65.57.25 1.01.4 1.35.51.57.18 1.09.15 1.5.09.46-.07 1.47-.6 1.67-1.18.2-.57.2-1.06.14-1.18-.06-.11-.22-.18-.47-.3Z"
-    />
-  </svg>
+  <div class="process-grid">
+    <div class="process-card">
+      <span>01</span>
+      <h3>Concept</h3>
+      <p>Understanding brand, emotion & story.</p>
+    </div>
 
-  Chat on WhatsApp
-</a>
+    <div class="process-card">
+      <span>02</span>
+      <h3>Design</h3>
+      <p>Luxury visuals, depth, lighting & motion.</p>
+    </div>
+
+    <div class="process-card">
+      <span>03</span>
+      <h3>Build</h3>
+      <p>Clean HTML, CSS & cinematic animations.</p>
+    </div>
+
+    <div class="process-card">
+      <span>04</span>
+      <h3>Launch</h3>
+      <p>Optimized, responsive & production-ready.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section cinematic-stats reveal">
+  <div class="stats-grid">
+    <div class="stat">
+      <h3>20+</h3>
+      <p>Projects Crafted</p>
+    </div>
+    <div class="stat">
+      <h3>100%</h3>
+      <p>Client Satisfaction</p>
+    </div>
+    <div class="stat">
+      <h3>Ultra</h3>
+      <p>Visual Quality</p>
+    </div>
+  </div>
+</section>
+
+<section class="section cinematic-cta reveal">
+  <h2 class="section-title">Ready to Build Something Legendary?</h2>
+  <p class="cta-text">
+    Let’s create a website that feels like a film, not a template.
+  </p>
+  <a href="#contact" class="btn-primary">Start the Project</a>
+</section>
 
 
-</p>
+<!-- TESTIMONIAL -->
+<section class="section cinematic reveal">
+  <h2 class="section-title">What Clients Say</h2>
 
+  <blockquote class="testimonial">
+    “Baljeet delivers premium quality with cinematic polish.
+    The site feels like a product, not a template.”
+  </blockquote>
+</section>
 
-  </section>
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Let’s Work Together</h2>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    © 2026 (Baljeetsingh Santosh) Abstract UI. All rights reserved.
-  </footer>
+      <p class="contact-text">
+        <a href="https://wa.me/918010589721" target="_blank">
+          Chat on WhatsApp →
+        </a>
+      </p>
+    </section>
 
-  <!-- JS -->
+  </main>
+
   <script src="script.js"></script>
-  <div class="cursor-aura"></div>
-
 </body>
 </html>
-
-
-
